@@ -1,8 +1,4 @@
 body{
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    max-height: 700px;
     background-color: rgb(241, 190, 173);
     font-family:Consolas, 'Courier New', monospace;
     color:rgb(61, 32, 23);
@@ -89,4 +85,8 @@ a:visited {
 .header{
     text-align: right;
     margin-bottom: 20px;
+}
+
+.avatar_pic{
+    margin: 10px;
 }
