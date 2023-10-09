@@ -1,0 +1,92 @@
+body{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 700px;
+    background-color: rgb(241, 190, 173);
+    font-family:Consolas, 'Courier New', monospace;
+    color:rgb(61, 32, 23);
+    font-size: 20px;
+}
+
+h1, h2, h3,
+h4, h5, h6{
+    margin: 0;
+}
+
+a:link {
+    color:rgb(61, 32, 23)
+}
+
+a:visited {
+    color:rgb(169, 42, 3)
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__inner{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.content__flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left{
+    flex-direction: column;
+    text-align: left;
+}
+
+.content-right{
+    flex-direction: column;
+    text-align: left;
+}
+
+.header__inner{
+    text-align:center;
+    font-size: 45px;
+    border-style: solid;
+    border-color: rgb(61, 32, 23);
+    border-radius: 5px;
+}
+
+.text__inner{
+    margin: 10px 20px;
+
+}
+
+.content__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.films_list{
+    list-style-type: none;
+    display: flex;
+}
+
+.film__poster{
+    margin: 40px 10px 10px 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.musik_list_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 40px 10px;
+}
+
+.header{
+    text-align: right;
+    margin-bottom: 20px;
+}
