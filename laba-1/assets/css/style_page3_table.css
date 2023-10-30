@@ -10,9 +10,34 @@ h4, h5, h6{
     margin: 0;
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-weight: 1;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(61, 32, 23);
+}
+
+a:visited {
+    text-decoration: none;
+    color:rgb(169, 42, 3)
+}
+
 .header{
+    line-height: 1.5;
+    display: flex;
     text-align: right;
     margin-bottom: 20px;
+    flex-direction: column;
+    border-radius: 1px;
+    letter-spacing: 5px;
+    font-weight: 1;
 }
 
 table, th, td{
@@ -26,6 +51,7 @@ table{
     text-align: center;  
     background-color: rgb(241, 190, 173); 
     max-width: 1100px;
+    margin-top: 40px;
 }
 
 .id{
@@ -52,7 +78,7 @@ table{
     height: 200px;
 }
 
-.table{
+.cat_table{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,5 +95,31 @@ table{
 
 .row3{
     color: rgb(241, 190, 173);
+    background-color: rgb(99, 53, 38);
+}
+
+form{
+    text-align: center;
+    font-size: 25px;
+}
+
+input{
+    font-size: 18px;
+    height: 26px;
+    width: 220px;
+    margin: 5px;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+fieldset{
+    border-color: rgb(99, 53, 38);
+}
+
+.submit {
+    font-size: 20px;
+    height: 40px;
+    width: 230px;
+    margin: 5px;
+    color: rgb(239, 198, 184);
     background-color: rgb(99, 53, 38);
 }

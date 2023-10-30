@@ -3,23 +3,45 @@
 <head>
     <title>Котостраничка 2, страница 3</title>
     <link rel="stylesheet" href="assets/css/style_page3_table.css">
+
+    <script>
+        function add(){
+            document.getElementById("id-table").value = document.getElementById("name").textContent;
+            document.getElementById("id-table").value = document.getElementById("course").textContent;
+            document.getElementById("id-table").value = document.getElementById("gtihub").textContent;
+            
+        }
+    </script>
 </head>
 <body>
+    
     <div class="header">
         <a class="headers_links" href="index2.html">Обо мне</a>
         <a class="headers_links" href="index2_page2.html">Позиционирование элементов</a>
         <a class="headers_links" href="index2_page3_table.html">Таблицы</a>
     </div>
-    <div class="table">
-        <caption><h1>Котики</h1></caption>
+    <h1>СПИСОК КОТИКОВ</h1>
+    <div class="cat_table">
+        <form>
+            <fieldset>
+                <legend>Введите информацию о котике</legend>
+                <input type="text" id="name" name="name" placeholder="Имя"><br>
+                <input type="text" id="course" name="course" placeholder="Направление"><br>
+                <input type="text" id="gtihub" name="gtihub" placeholder="Ссылка GitHub"><br>
+    
+                <input class="submit" type="submit" value="Добавить котика" onclick="add()">
+            </fieldset>
+        </form>
         <table>
-            <tr>
-                <th class="id">id</th>
-                <th class="FIO">Имя</th>
-                <th class="course">Направление</th>
-                <th>GitHub</th>
-                <th class="table_foto">Фото</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th class="id">id</th>
+                    <th class="FIO">Имя</th>
+                    <th class="course">Направление</th>
+                    <th class="gtihub">GitHub</th>
+                    <th class="table_foto">Фото</th>
+                </tr>
+            </thead>
             <tr class="row1">
                 <td class="id">1</td>
                 <td class="FIO">Василиса Шелковистая</td>
