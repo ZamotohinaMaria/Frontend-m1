@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    >
+    <!-- Подключение JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Актеришко</title>
+    <link 
+        rel="shortcut icon"
+        href="assets/images/icon-actor.ico"
+        type="image/x-icon"
+    >
+    <link rel="stylesheet" href="assets/styles/info_style.css">
+</head>
+<body data-bs-spy="scroll">
+    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Об актере
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#photo">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#films">Фильмография</a></li>
+                        <li><a class="dropdown-item" href="#bio">Биография</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="films_page.html">Фильмы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://dzen.ru/news/rubric/movies?issue_tld=ru">Новости</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="display-1">Венсан Кассель</h1>
+    <div class="display-2-block">
+        <h2 class="display-2" id="photo">Фотогалерея</h2>
+    </div>
+    
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/vensan-kassel-1.jpg" alt="vensan-kassel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/vensan-kassel-2.jpg" alt="vensan-kassel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/vensan-kassel-3.jpg" alt="vensan-kassel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/vensan-kassel-4.jpg" alt="vensan-kassel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/vensan-kassel-5.jpg" alt="vensan-kassel" class="d-block" style="width:100%">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="display-2-block">
+        <h2 class="display-2" id="films">Фильмография</h2>
+    </div>
+
+    <div class="container mt-3 film">
+        <div class="card film">
+            <img
+                class="card-img-top"
+                src="assets/images/beauty-and-beast.jpeg"
+                alt="Красавица и чудовище"
+            >
+            <div class="card-body">
+                <h4 class="card-title">Красавица и чудовище</h4>
+                <p class="card-text">
+                    <u>Год производства: </u>2014<br>
+                    <u>Страна: </u>Франция, Германия, Испания<br>
+                    <u>Жанр: </u>фэнтези, триллер, драма, мелодрама, семейный<br>
+                    <u>Слоган: </u>«The legend is reborn...»<br>
+                    <u>Режиссер: </u>Кристоф Ган<br>
+                    <u>В главных ролях: </u>Леа Сейду, Венсан Кассель, Андре Дюссолье, Эдуардо Норьега<br>
+                </p>
+            </div>
+            <a href="https://www.kinopoisk.ru/film/674218/" class="btn btn-primary">подробнее</a>
+        </div>
+
+        <div class="card film">
+            <img
+                class="card-img-top"
+                src="assets/images/my-king.jpg"
+                alt="Мой король"
+            >
+            <div class="card-body">
+                <h4 class="card-title">Мой король</h4>
+                <p class="card-text">
+                    <u>Год производства: </u>2015<br>
+                    <u>Страна: </u>Франция<br>
+                    <u>Жанр: </u>драма, мелодрама<br>
+                    <u>Режиссер: </u>Майвенн<br>
+                    <u>В главных ролях: </u>Эмманюэль Берко, Венсан Кассель<br></p>
+            </div>
+            <a href="https://www.kinopoisk.ru/film/821508/" class="btn btn-primary">подробнее</a>
+        </div>
+
+        <div class="card film">
+            <img
+                class="card-img-top"
+                src="assets/images/balck-swan.jpg"
+                alt="Черный лебедь"
+            >
+            <div class="card-body">
+                <h4 class="card-title">Черный лебедь</h4>
+                <p class="card-text">
+                    <u>Год производства: </u>2010<br>
+                    <u>Страна: </u>США<br>
+                    <u>Жанр: </u>драма, триллер<br>
+                    <u>Слоган: </u>«I just want to be perfect»<br>
+                    <u>Режиссер: </u>Даррен Аронофски<br>
+                    <u>В главных ролях: </u>Натали Портман, Венсан Кассель, Мила Кунис<br>
+                </p>
+            </div>
+            <a href="https://www.kinopoisk.ru/film/278273/" class="btn btn-primary">подробнее</a>
+        </div>
+    </div>
+    <div class="display-2-block">
+        <h2 class="display-2" id="bio">Биография</h2>
+    </div>
+
+    <div class="container bio">
+        <div class="card bio">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#demo1">
+                    Детство и семья
+                </a>
+            </div>
+            <div id="demo1" class="collapse show">
+                <div class="card-body">
+                    Венсан Кассель (настоящая фамилия – Крошон) появился на свет в семье небезызвестного парижского актера Жан-Пьера Крошона, более известного под сценической фамилией Кассель (звезда фильмов «Армия теней», «Разрыв» и мн. др).<br><br>
+                    С раннего детства мальчик рос на «межконфессиональном перепутье»: глава семейства был протестантом, мама постоянно металась между иудаизмом и католицизмом. Сгущал краски и тот факт, что сам Венсан рос в районе, густонаселенном выходцами из Африки и стран арабского мира, а потому среди его друзей и знакомых было очень много мусульман. Таким образом, будущий актер с младых ногтей научился терпимо относиться к представителям различных конфессий и вобрал в свой характер лучшее от окружавших его религиозных течений.<br><br>
+                    При этом сам Венсан вовсе не был глубоко религиозным человеком. Он посещал католическую школу, но особого энтузиазма по этому поводу никогда не испытывал. Единственной его страстью в подростковом возрасте был и всегда оставался театр. Венсан играл в школьных любительских постановках, посещал актерские курсы и совершенствовал свои навыки игры, просматривая фильмы своего любимого режиссера, Мартина Скорсезе.
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card bio">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#demo2">
+                    Творческий путь
+                </a>
+            </div>
+            <div id="demo2" class="collapse show">
+                <div class="card-body">
+                    Профессиональную актерскую карьеру Венсан Крошон начал в Штатах, перед этим вняв увещеваниям отца и взяв «семейный» (теперь уже) псевдоним – Кассель. Дебют на нью-йоркских подмостках вышел не очень удачным, по большей части парень подрабатывал на улицах в качестве «живой статуи», поэтому вскоре вернулся во Францию.<br><br>
+                    На родине он обратился к старинному знакомому отца, выдающемуся актеру и театральному режиссеру Жану-Луи Барро, основателю театра «Д’Орсэ» (позже переименован в «Род-Пойнт»), который славился весьма оригинальными интерпретациями трудов Ницше и Вольтера. Барро не отказал талантливому юноше, и на какое-то время Венсан стал постоянным членом театральной труппы.<br><br> 
+                    Первой ролью Венсана Касселя в кино стал Пьер из комедии «Аисты не такие, как о них думают» (1989). Роль была крошечной, как и следующая работа (комедия «Ключи от рая»). Затем последовал фотограф из романтической комедии «Обратная сторона страсти», а также юноша по имени Деде из ленты Жозе Даяна «Горячий шоколад».<br><br>
+                    В 1996 году Венсан Кассель снимался в мелодраме Жиля Мимуни «Квартира» вместе с Моникой Белуччи. Трогательная история любви молодого предпринимателя Макса и загадочной Лизы сблизила актеров, и между ними пробежала искра страсти, очень скоро разгоревшаяся в настоящий пожар.<br><br>
+                    В последующие годы актера все больше приглашали на главные роли во многих кассовых фильмах, таких как, "Черный лебедь", "Красавица и чудовище", "Багровые реки" и др.
+                </div>
+            </div>
+        </div>
+
+        <div class="card bio">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#demo3">
+                    Личная жизнь
+                </a>
+            </div>
+            <div id="demo3"class="collapse show">
+                <div class="card-body">
+                    С 3 августа 1999 по 26 августа 2013 года Венсан был женат на актрисе Монике Беллуччи. У бывших супругов есть две дочери — Дева Кассель (род. 12.09.2004) и Леони Кассель (род. 20.05.2010).<br><br>
+
+                    С 24 августа 2018 года Венсан женат на модели Тине Кунаки, с которой он встречался 2 года до их свадьбы. У супругов есть дочь — Амазони Кассель (род. 19.04.2019). В апреле 2023 года Венсан Кассель удалил все фотографии своей супруги из социальных сетей, спровоцировав слухи об их расставании. 5 апреля 2023 года пара объявила о расставании.
+                </div>
+            </div>
+        </div>
+
+        <div class="card bio">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#demo4">
+                    Интересные факты
+                </a>
+            </div>
+            <div id="demo4" class="collapse show">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Настоящее имя — Венсан Крошон (Vincent Crochon)
+                        </li>
+                        <li>
+                            Первое профессиональное образование получил в цирковой школе Анни Фрателлини, куда поступил в 17 лет
+                        </li>
+                        <li>
+                            Помимо ремесла акробата владеет техникой капойэры — это бразильское национальное боевое искусство, сочетающее в себе элементы танца и акробатики
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
